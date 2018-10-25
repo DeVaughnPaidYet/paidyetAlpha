@@ -42,6 +42,11 @@ export class HomePage {
     this.nav.push(TripsPage);
   }
 
+  // go to send a payment
+  doPay() {
+    this.nav.push(SendpayPage);
+  }
+
   // choose place
   choosePlace(from) {
     this.nav.push(SearchLocationPage, from);
