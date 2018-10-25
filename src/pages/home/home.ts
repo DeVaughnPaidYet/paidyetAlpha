@@ -6,6 +6,7 @@ import {NotificationsPage} from "../notifications/notifications";
 import {SettingsPage} from "../settings/settings";
 import {TripsPage} from "../trips/trips";
 import {SearchLocationPage} from "../search-location/search-location";
+import {SendpayPage} from "../sendpay/sendpay";
 
 
 @Component({
