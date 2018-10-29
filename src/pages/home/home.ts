@@ -7,6 +7,8 @@ import {SettingsPage} from "../settings/settings";
 import {TripsPage} from "../trips/trips";
 import {SearchLocationPage} from "../search-location/search-location";
 import {SendpayPage} from "../sendpay/sendpay";
+import {MakeapaymenthomePage} from "../makeapaymenthome/makeapaymenthome";
+
 
 
 @Component({
@@ -41,6 +43,11 @@ export class HomePage {
   // go to result page
   doSearch() {
     this.nav.push(TripsPage);
+  }
+
+  // go to Make a payment homepage to find merchants to pay
+  doPayhome() {
+    this.nav.push(MakeapaymenthomePage);
   }
 
   // go to send a payment

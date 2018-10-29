@@ -25,6 +25,8 @@ import {TripDetailPage} from "../pages/trip-detail/trip-detail";
 import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import {SendpayPage} from "../pages/sendpay/sendpay";
+import {MakeapaymenthomePage} from "../pages/makeapaymenthome/makeapaymenthome";
+
 
 
 // import services
@@ -47,7 +49,9 @@ import {SendpayPage} from "../pages/sendpay/sendpay";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    SendpayPage
+    SendpayPage,
+    MakeapaymenthomePage
+
   ],
   imports: [
     BrowserModule,
@@ -75,7 +79,8 @@ import {SendpayPage} from "../pages/sendpay/sendpay";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    SendpayPage
+    SendpayPage,
+    MakeapaymenthomePage
   ],
   providers: [
     StatusBar,
