@@ -1,8 +1,8 @@
 {
-  "name": "ionic3-start-theme",
-  "version": "0.0.3",
-  "author": "João Firmino <firminoata@gmail.com>",
-  "homepage": "https://market.ionicframework.com/themes/ionic3-start-theme",
+  "name": "PaidYET Mobile Alpha",
+  "version": "0.0.1",
+  "author": "DeVaughn Skillern <devaughn@paidyet.com>",
+  "homepage": "https://paidyet.com",
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
