@@ -49,8 +49,8 @@ import {MakeapaymenthomePage} from "../pages/makeapaymenthome/makeapaymenthome";
     SearchLocationPage,
     TripDetailPage,
     TripsPage,
-    SendpayPage,
-    MakeapaymenthomePage
+    
+    
 
   ],
   imports: [
