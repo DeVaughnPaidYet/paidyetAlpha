@@ -9,6 +9,7 @@ import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import {TripsPage} from "../pages/trips/trips";
+import {MakeapaymenthomePage} from "../pages/makeapaymenthome/makeapaymenthome";
 
 export interface MenuItem {
     title: string;
@@ -37,7 +38,8 @@ export class MyApp {
 
     this.appMenuItems = [
       {title: 'Home', component: HomePage, icon: 'home'},
-      {title: 'Get Paid', component: TripsPage, icon: 'cash'}
+      {title: 'Get Paid', component: TripsPage, icon: 'cash'},
+      {title: 'Make A Payment', component: MakeapaymenthomePage, icon: 'send'}
     ];
   }
 
