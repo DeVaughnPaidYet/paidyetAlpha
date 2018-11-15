@@ -4,6 +4,7 @@ import {AlertController} from 'ionic-angular';
 import {TripService} from "../../services/trip-service";
 import {TripDetailPage} from "../trip-detail/trip-detail";
 import {SendpayPage} from "../sendpay/sendpay";
+import {SendpayFilledPage} from "../sendpay-filled/sendpay-filled";
 
 
 @Component({
@@ -42,7 +43,7 @@ export class TripsPage {
   }
 
   // go to populated send a payment
-  doPayFilled() {
+  doFilled() {
     this.nav.push(SendpayFilledPage);
   }
 }

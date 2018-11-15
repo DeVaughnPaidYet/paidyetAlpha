@@ -4,7 +4,7 @@ import { SendpayFilledPage } from './sendpay-filled';
 
 @NgModule({
   declarations: [
-    SendpayFilledPage,
+    
   ],
   imports: [
     IonicPageModule.forChild(SendpayFilledPage),

@@ -26,6 +26,8 @@ import {TripsPage} from "../pages/trips/trips";
 import {LocalWeatherPage} from "../pages/local-weather/local-weather";
 import {SendpayPage} from "../pages/sendpay/sendpay";
 import {MakeapaymenthomePage} from "../pages/makeapaymenthome/makeapaymenthome";
+import {SendpayFilledPage} from "../pages/sendpay-filled/sendpay-filled";
+
 
 
 
@@ -50,7 +52,7 @@ import {MakeapaymenthomePage} from "../pages/makeapaymenthome/makeapaymenthome";
     TripDetailPage,
     TripsPage,
     SendpayPage,
-    SendpayPage,
+    SendpayFilledPage,
     MakeapaymenthomePage
     
 
@@ -82,6 +84,7 @@ import {MakeapaymenthomePage} from "../pages/makeapaymenthome/makeapaymenthome";
     TripDetailPage,
     TripsPage,
     SendpayPage,
+    SendpayFilledPage,
     MakeapaymenthomePage
   ],
   providers: [
