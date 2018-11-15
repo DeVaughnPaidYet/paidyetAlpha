@@ -27,24 +27,43 @@
       Charge
     </ion-card-header>
     <ion-card-content>
-      <ion-list>
-        <ion-item> xxxx-1234 exp. 11/21 
-          <button ion-button small tappable (click)="doPay()"><ion-icon name="add-circle" ></ion-icon></button>
-          <button ion-button small tappable (click)="doPayFilled()"><ion-icon name="cash" ></ion-icon></button>
-        </ion-item>
-    </ion-list>
+      
+        <div class="row header">
+            <div class="col">Name</div>
+            <div class="col">Card #</div>
+            <div class="col"col-2>Exp</div>
+            <div class="col"col-4>Tools</div>
+            
+          </div>
+          <div class="row" style="border-bottom: solid 1px grey;">
+            <div class="col">John Doe</div>
+            <div class="col">xxxx-1234</div>
+            <div class="col" col-2>11/21</div>
+            <div class="col" col-4>
+              <button ion-button small tappable (click)="doPayFilled()"><ion-icon name="cash" ></ion-icon></button>
+              <button ion-button small tappable (click)="" color="danger"><ion-icon name="trash" ></ion-icon></button>
+            </div>
+            
+          </div>
+
+        
+          <button ion-button block tappable (click)="doPay()"><ion-icon name="add-circle" ></ion-icon>Add New Card On File</button>
+        
+    
+
+    
     </ion-card-content>
   </ion-card>
 
   <ion-card>
   <ion-card-header>
-    Request
+    Request Card On File
   </ion-card-header>
   <ion-card-content>
   <form class="list-form">
     <ion-item>
      
-      <ion-label floating>
+      <ion-label fixed>
        
         Email or Mobile #
         
@@ -52,7 +71,7 @@
       <ion-input type="text" value=""></ion-input>
     </ion-item>
     
-    <button ion-button block tappable (click)="goToAccount()">Send</button>
+    <button ion-button block tappable (click)="doAlert()">Send</button>
   
   </form>
 </ion-card-content>
