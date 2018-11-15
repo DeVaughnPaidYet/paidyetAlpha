@@ -5,12 +5,16 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>Charge Card</ion-title>
-  </ion-navbar>
-
-</ion-header>
+    <ion-navbar color="primary">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        <strong>Pay / Add Card</strong>
+      </ion-title>
+     
+    </ion-navbar>
+  </ion-header>
 
 
 <ion-content padding style="background-color: white;">
@@ -55,29 +59,44 @@
           </ion-col>
       </ion-row>
   
+      
         <ion-item>
             <ion-label floating>
-              <ion-icon name="card" item-start class="text-primary"></ion-icon>
+              <ion-icon name="home" item-start class="text-primary"></ion-icon>
               Billing Address
             </ion-label>
             <ion-input type="text" value="123 PaidYET Blvd." disabled></ion-input>
         </ion-item>
-  
+      
+  <ion-row>
+      <ion-col col-6>
         <ion-item>
             <ion-label floating>
-              <ion-icon name="card" item-start class="text-primary"></ion-icon>
+              <ion-icon name="home" item-start class="text-primary"></ion-icon>
               City
             </ion-label>
             <ion-input type="text" value="Los Angeles" disabled></ion-input>
         </ion-item>
+      </ion-col>
   
+      <ion-col col-6>
         <ion-item>
             <ion-label floating>
-              <ion-icon name="card" item-start class="text-primary"></ion-icon>
+              <ion-icon name="home" item-start class="text-primary"></ion-icon>
               Zip Code
             </ion-label>
             <ion-input type="text" value="90001" disabled></ion-input>
         </ion-item>
+      </ion-col>
+    </ion-row>
+
+      <ion-item>
+          <ion-label floating>
+            <ion-icon name="cash" item-start class="text-primary"></ion-icon>
+            Charge Amount
+          </ion-label>
+          <ion-input type="text" value="$0.00"></ion-input>
+      </ion-item>
   
         <button ion-button block>Submit</button>
       </form>
