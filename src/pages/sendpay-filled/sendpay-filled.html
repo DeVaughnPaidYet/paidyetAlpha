@@ -7,12 +7,79 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>SendpayFilled</ion-title>
+    <ion-title>Charge Card</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
-</ion-content>
+<ion-content padding style="background-color: white;">
+    <!-- payment form -->
+    <ion-grid>
+    <form class="list-form">
+        <ion-item>
+          <ion-label floating>
+            <ion-icon name="contact" item-start class="text-primary"></ion-icon>
+            Full Name
+          </ion-label>
+          <ion-input type="text" value="John Doe" disabled></ion-input>
+        </ion-item>
+  
+        <ion-item>
+          <ion-label floating>
+            <ion-icon name="card" item-start class="text-primary"></ion-icon>
+            Credit Card Number
+          </ion-label>
+          <ion-input type="text" value="XXXX-XXXX-XXXX-1234" disabled></ion-input>
+        </ion-item>
+  
+        <ion-row>
+          <ion-col col-6>
+            <ion-item>
+              <ion-label floating>
+                <ion-icon name="card" item-start class="text-primary"></ion-icon>
+                Expiration
+              </ion-label>
+              <ion-input type="text" value="11/21" disabled></ion-input>
+            </ion-item>
+          </ion-col>
+  
+          <ion-col col-6>
+            <ion-item>
+                <ion-label floating>
+                  <ion-icon name="card" item-start class="text-primary"></ion-icon>
+                  CVV
+                </ion-label>
+                <ion-input type="text" value="XXX" disabled></ion-input>
+            </ion-item>
+          </ion-col>
+      </ion-row>
+  
+        <ion-item>
+            <ion-label floating>
+              <ion-icon name="card" item-start class="text-primary"></ion-icon>
+              Billing Address
+            </ion-label>
+            <ion-input type="text" value="123 PaidYET Blvd." disabled></ion-input>
+        </ion-item>
+  
+        <ion-item>
+            <ion-label floating>
+              <ion-icon name="card" item-start class="text-primary"></ion-icon>
+              City
+            </ion-label>
+            <ion-input type="text" value="Los Angeles" disabled></ion-input>
+        </ion-item>
+  
+        <ion-item>
+            <ion-label floating>
+              <ion-icon name="card" item-start class="text-primary"></ion-icon>
+              Zip Code
+            </ion-label>
+            <ion-input type="text" value="90001" disabled></ion-input>
+        </ion-item>
+  
+        <button ion-button block>Submit</button>
+      </form>
+    </ion-grid>
+  </ion-content>
