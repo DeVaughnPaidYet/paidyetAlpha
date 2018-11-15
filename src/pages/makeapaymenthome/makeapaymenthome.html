@@ -38,7 +38,7 @@
       </ion-label>
     </ion-item>
     
-    <button ion-button block>Submit</button>
+    <button ion-button block tappable (click)="doPay()">Submit</button>
   
   </form>
 </ion-card-content>
@@ -49,7 +49,7 @@
     Manage/Add Payment Method
   </ion-card-header>
   <ion-card-content>
-   <p> xxxx-1234 exp. 11/21 <button ion-button small><ion-icon name="add-circle"></ion-icon></button>
+   <p> xxxx-1234 exp. 11/21 <button ion-button small tappable (click)="doPay()"><ion-icon name="add-circle"></ion-icon></button>
     </p>
   </ion-card-content>
 </ion-card>

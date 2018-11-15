@@ -10,7 +10,7 @@
         <ion-icon name="menu"></ion-icon>
       </button>
       <ion-title>
-        <strong>Make a Payment</strong>
+        <strong>Pay / Add Card</strong>
       </ion-title>
       <ion-buttons end>
         <button ion-button tappable (click)="presentNotifications($event)">
@@ -24,7 +24,7 @@
   </ion-header>
 
 
-<ion-content padding>
+<ion-content padding style="background-color: white;">
   <!-- payment form -->
   <ion-grid>
   <form class="list-form">
@@ -87,6 +87,8 @@
           </ion-label>
           <ion-input type="text"></ion-input>
       </ion-item>
+
+      <button ion-button block>Submit</button>
     </form>
   </ion-grid>
 </ion-content>

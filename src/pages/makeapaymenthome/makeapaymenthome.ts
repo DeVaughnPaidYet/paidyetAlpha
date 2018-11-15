@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavParams } from 'ionic-angular';
+import {NavController, PopoverController} from "ionic-angular";
+import {SendpayPage} from "../sendpay/sendpay";
 
 /**
  * Generated class for the MakeapaymenthomePage page.
@@ -15,11 +17,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MakeapaymenthomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public nav: NavController, public navParams: NavParams, public popoverCtrl: PopoverController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MakeapaymenthomePage');
+  }
+
+  // go to send a payment
+  doPay() {
+    this.nav.push(SendpayPage);
   }
 
 }
