@@ -10,6 +10,7 @@ import { LoginPage } from "../pages/login/login";
 import { LocalWeatherPage } from "../pages/local-weather/local-weather";
 import {TripsPage} from "../pages/trips/trips";
 import {MakeapaymenthomePage} from "../pages/makeapaymenthome/makeapaymenthome";
+import { SettingsPage } from "../pages/settings/settings";
 
 export interface MenuItem {
     title: string;
@@ -39,7 +40,8 @@ export class MyApp {
     this.appMenuItems = [
       {title: 'Home', component: HomePage, icon: 'home'},
       {title: 'Get Paid', component: TripsPage, icon: 'cash'},
-      {title: 'Make A Payment', component: MakeapaymenthomePage, icon: 'send'}
+      {title: 'Make A Payment', component: MakeapaymenthomePage, icon: 'send'},
+      {title: 'Website Settings', component: SettingsPage, icon: 'cog'}
     ];
   }
 

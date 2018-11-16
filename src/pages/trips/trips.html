@@ -75,5 +75,37 @@
 </ion-card-content>
 </ion-card>
 
+<ion-card>
+    <ion-card-header>
+      Payment History
+    </ion-card-header>
+    <ion-card-content>
+      
+        <div class="row header">
+            <div class="col">Name</div>
+            <div class="col">Card #</div>
+            <div class="col"col-2>Amount</div>
+            <div class="col"col-4>Tools</div>
+            
+          </div>
+          <div class="row" style="border-bottom: solid 1px grey;">
+            <div class="col">John Doe</div>
+            <div class="col">xxxx-1234</div>
+            <div class="col" col-2>$20.00</div>
+            <div class="col" col-4>
+              <button ion-button small tappable (click)="doFilled()"><ion-icon name="cash" ></ion-icon></button>
+              <button ion-button small tappable color="danger"><ion-icon name="trash" ></ion-icon></button>
+            </div>
+            
+          </div>
+
+        
+        
+    
+
+    
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
 
