@@ -10,7 +10,7 @@
         <ion-icon name="menu"></ion-icon>
       </button>
       <ion-title>
-        <strong>Make a Payment</strong>
+        <strong>Reports</strong>
       </ion-title>
       <ion-buttons end>
         <button ion-button tappable (click)="presentNotifications($event)">
@@ -22,53 +22,37 @@
   </ion-header>
 
 
-<ion-content padding>
-  <ion-card>
-  <ion-card-header>Find Merchant</ion-card-header>
-  <ion-card-content>
-  <form class="list-form">
-    <ion-item>
-      <ion-input type="text"></ion-input>
-      <ion-label class="label-right">
-       
-        .paidyet.com
-        
-      </ion-label>
-    </ion-item>
-    
-    <button ion-button block tappable (click)="doPay()">Submit</button>
-  
-  </form>
-</ion-card-content>
-</ion-card>
-
-<ion-card>
-  <ion-card-header>
-    Manage Payment Methods
-  </ion-card-header>
-  <ion-card-content>
-    
-      <div class="row header">
-          <div class="col">Name</div>
-          <div class="col">Card #</div>
-          <div class="col"col-2>Exp</div>
-          <div class="col"col-4>Delete</div>
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+          Payment History
+        </ion-card-header>
+        <ion-card-content>
           
-        </div>
-        <div class="row" style="border-bottom: solid 1px grey;">
-          <div class="col">John Doe</div>
-          <div class="col">xxxx-1234</div>
-          <div class="col" col-2>11/21</div>
-          <div class="col" col-4>
+            <div class="row header">
+                <div class="col">Name</div>
+                <div class="col">Card #</div>
+                <div class="col"col-2>Amount</div>
+                <div class="col"col-4>Tools</div>
+                
+              </div>
+              <div class="row" style="border-bottom: solid 1px grey; font-size: 11px;">
+                <div class="col">John Doe</div>
+                <div class="col">xxxx-1234</div>
+                <div class="col" col-2>$20.00</div>
+                <div class="col" col-4>
+                  <button ion-button small tappable (click)="doFilled()"><ion-icon name="cash" ></ion-icon></button>
+                  <button ion-button small tappable color="danger"><ion-icon name="trash" ></ion-icon></button>
+                </div>
+                
+              </div>
+    
             
-            <button ion-button tappable color="danger"><ion-icon name="trash" ></ion-icon></button>
-          </div>
-          
-        </div>
+            
+        
+    
+        
+        </ion-card-content>
+      </ion-card>
 
-      
-        <button ion-button block tappable (click)="doPay()"><ion-icon name="add-circle" ></ion-icon>Add New Payment Method</button>
-   
-  </ion-card-content>
-</ion-card>
 </ion-content>

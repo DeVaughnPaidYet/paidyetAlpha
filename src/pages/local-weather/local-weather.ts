@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { WeatherProvider } from '../../services/weather';
@@ -16,17 +17,22 @@ export class LocalWeatherPage {
   }
 
   public locationList: Array<any> = [
-    {city: 'Los Angeles', state: 'CA'},
-    {city: 'Miami', state: 'FL'},
-    {city: 'New York', state: 'NY'},
-    {city: 'Seattle', state: 'WA'}
+    {city: 'John Doe', state: '4564'},
+    {city: 'Jane Doe', state: '7879'},
+    {city: 'Mitch Conoly', state: '6132'},
+    {city: 'Dave Sorino', state: '0003'}
   ]
 
   constructor(
     public navCtrl: NavController,
     private weatherProvider: WeatherProvider,
-    private storage: Storage) {
+    private storage: Storage,
+    ) {
+
+    
   }
+
+ 
 
   ionViewWillEnter() {
 
@@ -36,8 +42,8 @@ export class LocalWeatherPage {
 
       } else {
         this.location = {
-          state: 'NY',
-          city: 'New York'
+          state: 'CA',
+          city: 'Los Angeles'
         }
       }
 

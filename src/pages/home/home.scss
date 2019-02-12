@@ -14,49 +14,12 @@ page-home,
       padding-left: 0;
     }
   }
-}
-.card-background-page {
-
-  ion-card {
-    position: relative;
-    text-align: center;
+  .big {
+    height: 5.6rem;
   }
-
-  .card-title {
-    position: absolute;
-    top: 36%;
-    font-size: 2.0em;
-    width: 100%;
-    font-weight: bold;
-    color: #fff;
-    z-index: 1;
-  }
-
-  .card-subtitle {
-    font-size: 1.0em;
-    position: absolute;
-    top: 52%;
-    width: 100%;
-    color: #fff;
-    z-index: 1;
-  }
-
 }
 
-.myOverlay{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0px;
-  opacity: 0.8;
-  background: #4c6df9;
- }
 
- .myOverlay1{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0px;
-  opacity: 0.8;
-  background: #35b141;
- }
+
+
+

@@ -1,13 +1,13 @@
 import {Component} from "@angular/core";
 import {NavController, PopoverController} from "ionic-angular";
 import {Storage} from '@ionic/storage';
-
 import {NotificationsPage} from "../notifications/notifications";
 import {SettingsPage} from "../settings/settings";
 import {TripsPage} from "../trips/trips";
 import {SearchLocationPage} from "../search-location/search-location";
 import {SendpayPage} from "../sendpay/sendpay";
 import {MakeapaymenthomePage} from "../makeapaymenthome/makeapaymenthome";
+import {LocalWeatherPage} from "../local-weather/local-weather";
 
 
 
@@ -45,8 +45,13 @@ export class HomePage {
     this.nav.push(TripsPage);
   }
 
-  // go to Make a payment homepage to find merchants to pay
-  doPayhome() {
+   // go to request page
+   doRequest() {
+    this.nav.push(LocalWeatherPage);
+  }
+
+  // go to reports page
+  doReports() {
     this.nav.push(MakeapaymenthomePage);
   }
 

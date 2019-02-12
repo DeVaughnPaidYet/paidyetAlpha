@@ -1,3 +1,4 @@
+import { Platform } from 'ionic-angular';
 import {Component} from "@angular/core";
 import {NavController, PopoverController} from "ionic-angular";
 import {AlertController} from 'ionic-angular';
@@ -21,6 +22,8 @@ export class TripsPage {
    // set sample data
     this.trips = tripService.getAll();
   }
+
+ 
 
   //send request alert
   doAlert() {

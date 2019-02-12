@@ -11,6 +11,7 @@
       <button ion-button tappable (click)="presentNotifications($event)">
         <ion-icon name="notifications"></ion-icon>
       </button>
+
       
     </ion-buttons>
   </ion-navbar>
@@ -19,36 +20,32 @@
 
 
  
- <ion-content class="animated fadeIn common-bg card-background-page">
+ <ion-content class="animated fadeIn">
   
 
-       <ion-card tappable (click)="doSearch()">
-      
-           
-          <img src="https://images.unsplash.com/photo-1534497977663-a73dfabd7774?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ffa16299d8b0a0b021cde843304374d&auto=format&fit=crop&w=687&q=80"/>
-          <div class="card-title">Get Paid</div>
-          <div class="card-subtitle">Send a money request or invoice</div>
-        <div class="myOverlay1">  
-        </div>
+      <ion-card>
+        <button ion-button icon-start block no-margin color="primary" class="round big" tappable (click)="doSearch()">
+          <ion-icon name="money"></ion-icon> Charge
+        </button>
       </ion-card>
 
-    <ion-card tappable (click)="doPayhome()">
-      
-           
-        <img src="https://images.unsplash.com/photo-1534497977663-a73dfabd7774?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2ffa16299d8b0a0b021cde843304374d&auto=format&fit=crop&w=687&q=80"/>
-        <div class="card-title">Make a Payment</div>
-        <div class="card-subtitle">Send money instantly</div>
-      <div class="myOverlay">  
-      </div>
+    <ion-card>
+      <button ion-button icon-start block no-margin color="dark" class="round big" tappable (click)="doRequest()">
+        <ion-icon name="money"></ion-icon> Request
+      </button>
+    </ion-card>
+
+    <ion-card>
+      <button ion-button icon-start block no-margin color="light" class="round big" tappable (click)="doReports()">
+        <ion-icon name="money"></ion-icon> Reports
+      </button>
     </ion-card>
     
-  
-
- <ion-card>
-  <button ion-button icon-start block no-margin color="danger" class="round" tappable (click)="goToAccount()">
-    <ion-icon name="search"></ion-icon> Settings
-  </button>
-</ion-card>
+    <ion-card>
+      <button ion-button icon-start block no-margin color="danger" class="round" tappable (click)="goToAccount()">
+        <ion-icon name="search"></ion-icon> Settings
+      </button>
+    </ion-card>
 
 
 </ion-content>
