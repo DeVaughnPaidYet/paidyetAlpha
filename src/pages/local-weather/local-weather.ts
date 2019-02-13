@@ -1,10 +1,14 @@
 
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import {NavController, PopoverController} from "ionic-angular";
 import { WeatherProvider } from '../../services/weather';
 import { Storage } from '@ionic/storage';
-// import { HttpErrorResponse } from '@angular/common/http';
+import {SendpayFilledPage} from "../sendpay-filled/sendpay-filled";
+import { IonicPage, NavParams } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
+
+// import { HttpErrorResponse } from '@angular/common/http';
 @Component({
   selector: 'page-local-weather',
   templateUrl: 'local-weather.html'
@@ -18,21 +22,37 @@ export class LocalWeatherPage {
 
   public locationList: Array<any> = [
     {city: 'John Doe', state: '4564'},
-    {city: 'Jane Doe', state: '7879'},
-    {city: 'Mitch Conoly', state: '6132'},
-    {city: 'Dave Sorino', state: '0003'}
   ]
 
   constructor(
-    public navCtrl: NavController,
+    public nav: NavController,
+    public navParams: NavParams,
+    public popoverCtrl: PopoverController,
+    public alertController: AlertController,
     private weatherProvider: WeatherProvider,
     private storage: Storage,
+  
     ) {
 
     
   }
 
+  // go to populated send a payment
+doFilled() {
+  this.nav.push(SendpayFilledPage);
+}
  
+async presentAlert() {
+  const alert = await this.alertController.create({
+    header: 'Alert',
+    subHeader: 'Notification',
+    message: 'Payment Request Sent.',
+    buttons: ['OK']
+  });
+
+  await alert.present();
+}
+
 
   ionViewWillEnter() {
 

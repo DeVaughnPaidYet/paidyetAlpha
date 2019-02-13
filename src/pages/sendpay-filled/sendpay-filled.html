@@ -10,7 +10,7 @@
         <ion-icon name="menu"></ion-icon>
       </button>
       <ion-title>
-        <strong>Pay / Add Card</strong>
+        <strong>Charge Card On File</strong>
       </ion-title>
      
     </ion-navbar>
@@ -28,7 +28,18 @@
           </ion-label>
           <ion-input type="text" value="John Doe" disabled></ion-input>
         </ion-item>
+
+        <ion-item>
+          <ion-label floating>
+            <ion-icon name="cash" item-start class="text-primary"></ion-icon>
+            Charge Amount
+          </ion-label>
+          <ion-input type="text" value="$0.00"></ion-input>
+      </ion-item>
   
+        <button ion-button block>Submit</button>
+  
+      <div class="hide">
         <ion-item>
           <ion-label floating>
             <ion-icon name="card" item-start class="text-primary"></ion-icon>
@@ -90,15 +101,7 @@
       </ion-col>
     </ion-row>
 
-      <ion-item>
-          <ion-label floating>
-            <ion-icon name="cash" item-start class="text-primary"></ion-icon>
-            Charge Amount
-          </ion-label>
-          <ion-input type="text" value="$0.00"></ion-input>
-      </ion-item>
-  
-        <button ion-button block>Submit</button>
+      </div>
       </form>
     </ion-grid>
   </ion-content>

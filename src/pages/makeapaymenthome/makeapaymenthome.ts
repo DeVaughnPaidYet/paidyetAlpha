@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavParams } from 'ionic-angular';
 import {NavController, PopoverController} from "ionic-angular";
 import {SendpayPage} from "../sendpay/sendpay";
+import {SendpayFilledPage} from "../sendpay-filled/sendpay-filled";
+
 
 /**
  * Generated class for the MakeapaymenthomePage page.
@@ -10,7 +12,7 @@ import {SendpayPage} from "../sendpay/sendpay";
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+
 @Component({
   selector: 'page-makeapaymenthome',
   templateUrl: 'makeapaymenthome.html',
@@ -28,5 +30,8 @@ export class MakeapaymenthomePage {
   doPay() {
     this.nav.push(SendpayPage);
   }
-
+    // go to populated send a payment
+    doFilled() {
+      this.nav.push(SendpayFilledPage);
+    }
 }

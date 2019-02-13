@@ -39,9 +39,7 @@ export class MyApp {
 
     this.appMenuItems = [
       {title: 'Home', component: HomePage, icon: 'home'},
-      {title: 'Get Paid', component: TripsPage, icon: 'cash'},
-      {title: 'Make A Payment', component: MakeapaymenthomePage, icon: 'send'},
-      {title: 'Website Settings', component: SettingsPage, icon: 'cog'}
+      {title: 'Account Settings', component: SettingsPage, icon: 'cog'}
     ];
   }
 
