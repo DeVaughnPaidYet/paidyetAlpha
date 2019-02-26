@@ -44,9 +44,7 @@ doFilled() {
  
 async presentAlert() {
   const alert = await this.alertController.create({
-    header: 'Alert',
-    subHeader: 'Notification',
-    message: 'Payment Request Sent.',
+    message: 'Card-On-File Request Sent.',
     buttons: ['OK']
   });
 

@@ -5,7 +5,7 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-    <ion-navbar color="primary">
+    <ion-navbar color="verydark">
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
@@ -17,11 +17,13 @@
   </ion-header>
 
 
-<ion-content padding style="background-color: white;">
+<ion-content padding color="black" style="">
+  <ion-card>
+    <ion-card-content>
     <!-- payment form -->
     <ion-grid>
     <form class="list-form">
-        <ion-item>
+        <ion-item color="primary">
           <ion-label floating>
             <ion-icon name="contact" item-start class="text-primary"></ion-icon>
             Full Name
@@ -29,15 +31,15 @@
           <ion-input type="text" value="John Doe" disabled></ion-input>
         </ion-item>
 
-        <ion-item>
+        <ion-item color="primary">
           <ion-label floating>
-            <ion-icon name="cash" item-start class="text-primary"></ion-icon>
+            <ion-icon name="card" item-start class="text-primary"></ion-icon>
             Charge Amount
           </ion-label>
           <ion-input type="text" value="$0.00"></ion-input>
       </ion-item>
   
-        <button ion-button block>Submit</button>
+        <button ion-button block color="green" tappable (click)="presentAlert()">Charge</button>
   
       <div class="hide">
         <ion-item>
@@ -104,4 +106,6 @@
       </div>
       </form>
     </ion-grid>
+  </ion-card-content>
+  </ion-card>
   </ion-content>

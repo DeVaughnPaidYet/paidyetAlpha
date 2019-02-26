@@ -1,19 +1,20 @@
 <!-- -->
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="verydark">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <strong>PaidYET Mobile</strong> Alpha
+      <div class="logo"></div>
     </ion-title>
-    <ion-buttons end>
+    <!--<ion-buttons end>
       <button ion-button tappable (click)="presentNotifications($event)">
         <ion-icon name="notifications"></ion-icon>
       </button>
 
       
     </ion-buttons>
+    -->
   </ion-navbar>
 </ion-header>
 
@@ -24,28 +25,31 @@
   
 
       <ion-card>
-        <button ion-button icon-start block no-margin color="primary" class="round big" tappable (click)="doSearch()">
+        <button ion-button icon-start block no-margin color="green" class="round big" tappable (click)="doSearch()">
           <ion-icon name="money"></ion-icon> Charge
         </button>
       </ion-card>
 
     <ion-card>
-      <button ion-button icon-start block no-margin color="dark" class="round big" tappable (click)="doRequest()">
+      <button ion-button icon-start block no-margin color="red" class="round big" tappable (click)="doRequest()">
         <ion-icon name=""></ion-icon> Request
       </button>
     </ion-card>
 
     <ion-card>
       <button ion-button icon-start block no-margin color="light" class="round big" tappable (click)="doReports()">
-        <ion-icon name=""></ion-icon> Reports
+        <ion-icon name=""></ion-icon> Activity
       </button>
     </ion-card>
-    
+
     <ion-card>
-      <button ion-button icon-start block no-margin color="danger" class="round" tappable (click)="goToAccount()">
-        <ion-icon name=""></ion-icon> Settings
-      </button>
-    </ion-card>
+        <button onclick="alert('This will open a new tab in your web browser.');return window.open('https://premium.paidyet.com/merchant', '_system',);" ion-button icon-start block no-margin color="verydark" class="round big" tappable>
+          <ion-icon name=""></ion-icon> Reports
+        </button>
+      </ion-card>
+
+    
+ 
 
 
 </ion-content>

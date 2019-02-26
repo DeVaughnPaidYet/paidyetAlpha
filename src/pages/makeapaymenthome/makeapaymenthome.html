@@ -5,12 +5,12 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-    <ion-navbar color="primary">
+    <ion-navbar color="verydark">
       <button ion-button menuToggle>
         <ion-icon name="menu"></ion-icon>
       </button>
       <ion-title>
-        <strong>Reports</strong>
+        <strong>Activity</strong>
       </ion-title>
       
     </ion-navbar>
@@ -20,28 +20,50 @@
 <ion-content>
     <ion-card>
         <ion-card-header>
-          Payment History
+         
+          <ion-searchbar animated></ion-searchbar>
         </ion-card-header>
-        <ion-card-content>
+        <ion-card-content color="primary">
           
             <div class="row header">
-                <div class="col">Name</div>
-                <div class="col">Card #</div>
-                <div class="col"col-2>Amount</div>
-                <div class="col"col-4>Tools</div>
+                <div class="col">Date</div>
+                <div class="col"col-3>Name</div>
+                <div class="col">Type</div>
+                <div class="col"col-3>Status</div>
                 
               </div>
               <div class="row" style="border-bottom: solid 1px grey; font-size: 11px;">
-                <div class="col">John Doe</div>
-                <div class="col">xxxx-1234</div>
-                <div class="col" col-2>$20.00</div>
-                <div class="col" col-4>
-                  <button ion-button small tappable (click)="doFilled()"><ion-icon name="cash" ></ion-icon></button>
-                  <button ion-button small tappable color="danger"><ion-icon name="trash" ></ion-icon></button>
+                <div class="col">2/15/19</div>
+                <div class="col" col-3>John Doe</div>
+                <div class="col">Payment</div>
+                <div class="col" col-3>
+                  $20.00
                 </div>
                 
               </div>
+
+              <div class="row" style="border-bottom: solid 1px grey; font-size: 11px;">
+                  <div class="col">2/14/19</div>
+                  <div class="col" col-3>Jane Doe</div>
+                  <div class="col">Request</div>
+                  <div class="col" col-3>
+                    Pending
+                  </div>
+                  
+                </div>
+
+                <div class="row" style="border-bottom: solid 1px grey; font-size: 11px;">
+                    <div class="col">2/12/19</div>
+                    <div class="col" col-3>Dave West</div>
+                    <div class="col">Refund</div>
+                    <div class="col" col-3>
+                      ($150.00)
+                    </div>
+                    
+                  </div>
+                  
       </ion-card-content>
+      
       </ion-card>
 
 </ion-content>

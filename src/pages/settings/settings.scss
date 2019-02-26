@@ -6,7 +6,14 @@ page-account,
     margin-bottom: 2rem;
     overflow: hidden;
   }
-  .item-md {
-    background-color: #fff;
- }
+  
+ .ion-item {
+  
+  background-color: #fff !important;
+ 
+}
+.item-md-secondary, .item-divider-md-secondary {
+ 
+  background-color: transparent !important;
+}
 }

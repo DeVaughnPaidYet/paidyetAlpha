@@ -31,22 +31,28 @@ page-trips,
   background-color:lightgrey;
 }
 
-.col {
-  border: solid 1px grey;
-  border-bottom-style: none;
-  border-right-style: none;
+.item-label-stacked .text-input-md, .item-label-floating .text-input-md {
+  margin-left: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+.label-md[stacked], .label-md[floating] {
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
-.col:last-child {
-  border-right: solid 1px grey;
-}
-
-.row:last-child .col {
-  border-bottom: solid 1px grey;
-}
 .button-small-md {
   height: 2.1em;
   font-size: 1.1rem;
   padding: 0 0.9em;
+}
+.text-input-md {
+  margin: 13px 8px;
+  padding: 5px;
+  background-color: #e1e1e1;
+  color: black;
+  border-radius: 5px;
 }
 }

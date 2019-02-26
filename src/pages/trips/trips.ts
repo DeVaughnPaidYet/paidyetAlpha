@@ -49,4 +49,11 @@ export class TripsPage {
   doFilled() {
     this.nav.push(SendpayFilledPage);
   }
+  
+  hide() {
+    this["hideMe"] = true;
+  }
+  show() {
+    this["hideMe"] = false;
+  }
 }

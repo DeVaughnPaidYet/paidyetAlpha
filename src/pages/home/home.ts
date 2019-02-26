@@ -8,6 +8,7 @@ import {SearchLocationPage} from "../search-location/search-location";
 import {SendpayPage} from "../sendpay/sendpay";
 import {MakeapaymenthomePage} from "../makeapaymenthome/makeapaymenthome";
 import {LocalWeatherPage} from "../local-weather/local-weather";
+import { AlertController } from 'ionic-angular';
 
 
 
@@ -17,28 +18,16 @@ import {LocalWeatherPage} from "../local-weather/local-weather";
 })
 
 export class HomePage {
-  // search condition
-  public search = {
-    name: "Rio de Janeiro, Brazil",
-    date: new Date().toISOString()
+
+
+  constructor(
+    private storage: Storage, 
+    public nav: NavController, 
+    public popoverCtrl: PopoverController,
+    public alertController: AlertController) {
   }
 
-  constructor(private storage: Storage, public nav: NavController, public popoverCtrl: PopoverController) {
-  }
 
-  ionViewWillEnter() {
-    // this.search.pickup = "Rio de Janeiro, Brazil";
-    // this.search.dropOff = "Same as pickup";
-    this.storage.get('pickup').then((val) => {
-      if (val === null) {
-        this.search.name = "Rio de Janeiro, Brazil"
-      } else {
-        this.search.name = val;
-      }
-    }).catch((err) => {
-      console.log(err)
-    });
-  }
 
   // go to result page
   doSearch() {
@@ -77,6 +66,28 @@ export class HomePage {
       ev: myEvent
     });
   }
+
+ /* ionViewCanLeave(): Promise<void> {
+    return new Promise((resolve, reject) => {
+      let confirm = this.alertController.create({
+        title: 'Are you sure?',
+        message: 'Bunnies will die :(',
+        buttons: [{
+          text: 'OK',
+          handler: () => {
+            resolve();
+          },
+        }, {
+          text: 'Cancel',
+          handler: () => {
+            reject();
+          }
+        }],
+      });
+      confirm.present();
+    })
+  } */
+
 
 }
 

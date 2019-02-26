@@ -1,49 +1,44 @@
 <ion-header>
-    <ion-navbar color="primary">
+    <ion-navbar color="verydark">
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
-        <ion-title>Request</ion-title>
+        <ion-title>Request Card On File</ion-title>
+        
     </ion-navbar>
+   
 </ion-header>
 
 <ion-content padding>
-  <ion-card class="full-width" no-margin margin-bottom  style="margin-top: 15px">
-      <ion-card-header>
-          Charge Existing Card On File
-      </ion-card-header>
-    <ion-card-content no-padding>
-
-      <ion-item>
-        <ion-label class="text-1x bold">Select</ion-label>
-        <ion-select [(ngModel)]="location" (ionChange)="getWeather(location)">
-          <ion-option *ngFor="let location of locationList" [value]="location">{{ location.city }}</ion-option>
-        </ion-select>
-      </ion-item>
-
-      <button ion-button block tappable (click)="doFilled()">Send</button>
-    </ion-card-content>
-  </ion-card>
+  
 
   <ion-card class="full-width" no-margin margin-bottom>
     <ion-card-header>
-      Request Card On File
+        
     </ion-card-header>
     <ion-card-content>
+      <p>Email or Mobile #</p>
     <form class="list-form">
-      <ion-item>
+      <ion-item color="white">
        
-        <ion-label stacked>
-         
-          Email or Mobile #
-          
-        </ion-label>
-        <ion-input type="text" value="310-555-1212"></ion-input>
+        
+        <ion-input class="row" type="text" value=""></ion-input>
+        <button ion-button clear color="primary" type="button" item-left>
+            <ion-icon name="mail"> </ion-icon>
+          </button>
+      </ion-item>
+      <hr />
+      <ion-item style="margin-top: 5px;" color="white">
+       <ion-input class="row" type="text" value=""></ion-input>
+       <button ion-button clear color="primary" type="button" item-left>
+          <ion-icon name="call"> </ion-icon>
+        </button>
       </ion-item>
       
       <button ion-button block tappable (click)="presentAlert()">Send</button>
     
     </form>
+    
   </ion-card-content>
   </ion-card>
 </ion-content>

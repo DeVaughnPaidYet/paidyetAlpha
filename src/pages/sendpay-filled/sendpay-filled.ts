@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
+import { AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the SendpayFilledPage page.
@@ -15,11 +16,25 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SendpayFilledPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(
+    public navCtrl: NavController,
+    public nav: NavController,
+    public navParams: NavParams,
+    public popoverCtrl: PopoverController,
+    public alertController: AlertController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SendpayFilledPage');
+  }
+
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      message: 'Charge successful.',
+      buttons: ['OK']
+    });
+  
+    await alert.present();
   }
 
 }

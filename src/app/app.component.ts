@@ -39,8 +39,8 @@ export class MyApp {
 
     this.appMenuItems = [
       {title: 'Home', component: HomePage, icon: 'home'},
-      {title: 'Account Settings', component: SettingsPage, icon: 'cog'}
-    ];
+      {title: 'Settings', component: SettingsPage, icon: 'cog'}
+      ];
   }
 
   initializeApp() {

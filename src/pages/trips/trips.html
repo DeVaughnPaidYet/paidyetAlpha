@@ -1,12 +1,17 @@
 <!-- -->
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="verydark">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <strong>Get Paid</strong>
+      <strong>Cards On File</strong>
     </ion-title>
+    <ion-buttons end>
+      <button ion-button tappable onclick="alert('This will open your PaidYET contacts manager in a new web brower tab.');return window.open('https://premium.paidyet.com/merchant/contacts', '_system',);">
+        <ion-icon name="create"></ion-icon>
+      </button>
+    </ion-buttons>
    
   </ion-navbar>
 </ion-header>
@@ -16,37 +21,87 @@
 
   
 <ion-card class="full-width" no-margin margin-bottom>
-    <ion-card-header>
-      Charge
-    </ion-card-header>
-    <ion-card-content>
+    <ion-card-header stlye="text-align: center">
+        <ion-buttons end style="float: right; width: 50px;">
+            <button color="verydark" ion-button tappable (click)="hide()">
+              <ion-icon name="checkbox-outline"></ion-icon>
+            </button>
+            <br />
+           
+          </ion-buttons>
+          
+      <h1 color="black">John Doe</h1> 
+      <div style="padding-top: 5px;">john@email.com</div>
+      <div>(310) 555-5555</div>
       
-        <div class="row header">
-            <div class="col">Name</div>
-            <div class="col">Card #</div>
-            <div class="col"col-2>Exp</div>
-            <div class="col"col-4>Tools</div>
+    </ion-card-header>
+    <ion-card-content color="primary">
+      
+        <hr />
+       
+          <button ion-button class="round big" color="green" block tappable (click)="doFilled()">
+            <ion-icon name="card" item-start class="" style="margin-top: 0px;padding: 5px;"></ion-icon> XXXX-XXXX-XXXX-1234 </button>
+         <div *ngIf="hideMe"><div class="">
             
+            <ion-row>
+              <ion-col col-6>
+                <ion-item>
+                  <ion-label floating>
+                    <ion-icon name="card" item-start class="text-primary"></ion-icon>
+                    Exp
+                  </ion-label>
+                  <ion-input type="text" value="11/21" disabled></ion-input>
+                </ion-item>
+              </ion-col>
+      
+              <ion-col col-6>
+                <ion-item>
+                    <ion-label floating>
+                      <ion-icon name="card" item-start class="text-primary"></ion-icon>
+                      CVV
+                    </ion-label>
+                    <ion-input type="text" value="XXX" disabled></ion-input>
+                </ion-item>
+              </ion-col>
+          </ion-row>
+      
+          
+            <ion-item>
+                <ion-label floating>
+                  <ion-icon name="home" item-start class="text-primary"></ion-icon>
+                  Billing Address
+                </ion-label>
+                <ion-input type="text" value="123 PaidYET Blvd." disabled></ion-input>
+            </ion-item>
+          
+      <ion-row>
+          <ion-col col-12>
+            <ion-item>
+                <ion-label floating>
+                  <ion-icon name="home" item-start class="text-primary"></ion-icon>
+                  City
+                </ion-label>
+                <ion-input type="text" value="Los Angeles" disabled></ion-input>
+            </ion-item>
+          </ion-col>
+      
+          <ion-col col-12>
+            <ion-item>
+                <ion-label floating>
+                  <ion-icon name="home" item-start class="text-primary"></ion-icon>
+                  Zip Code
+                </ion-label>
+                <ion-input type="text" value="90001" disabled></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <button ion-button block tappable (click)="show()" color="red">X Close Details</button>
           </div>
-          <div class="row" style="border-bottom: solid 1px grey; font-size: 11px;">
-            <div class="col">John Doe</div>
-            <div class="col">xxxx-1234</div>
-            <div class="col" col-2>11/21</div>
-            <div class="col" col-4>
-              <button ion-button small tappable (click)="doFilled()"><ion-icon name="cash" ></ion-icon></button>
-              <button ion-button small tappable color="danger"><ion-icon name="trash" ></ion-icon></button>
-            </div>
-            
-          </div>
-
-        
-          <button ion-button block tappable (click)="doPay()"><ion-icon name="add-circle" ></ion-icon>Add New Card On File</button>
-        
-    
-
-    
+        </div>
     </ion-card-content>
   </ion-card>
+
+  
 
   
 
