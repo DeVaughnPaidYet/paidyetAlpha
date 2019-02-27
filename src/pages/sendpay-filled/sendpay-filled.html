@@ -19,20 +19,18 @@
 
 <ion-content padding color="black" style="">
   <ion-card>
+      <ion-card-header style="padding: 13px 21px 0px;">
+         <h1 color="black">John Doe</h1> 
+        <div style="padding-top: 5px;">john@email.com</div>
+        <div>(310) 555-5555</div>
+        
+      </ion-card-header>
     <ion-card-content>
     <!-- payment form -->
     <ion-grid>
     <form class="list-form">
         <ion-item color="primary">
-          <ion-label floating>
-            <ion-icon name="contact" item-start class="text-primary"></ion-icon>
-            Full Name
-          </ion-label>
-          <ion-input type="text" value="John Doe" disabled></ion-input>
-        </ion-item>
-
-        <ion-item color="primary">
-          <ion-label floating>
+          <ion-label stacked class="no-margin">
             <ion-icon name="card" item-start class="text-primary"></ion-icon>
             Charge Amount
           </ion-label>
